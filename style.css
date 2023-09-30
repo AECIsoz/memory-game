@@ -1,0 +1,119 @@
+/*Innehållsförteckning:
+1. Custom font
+2. Body och rubrik
+3. Huvudinnehåll
+4. Formulär
+5. Kortspel
+6. Footer
+*/
+
+/* 1. Custom font */
+@font-face {
+    font-family: castelar; 
+    src: url(fonts/CASTELAR.TTF);
+}
+
+/* 2. Body och rubriker */
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: Castelar, serif;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+/* 3. Huvudinnehåll */
+#wrapper {
+    background-color: #FAF8EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#background {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.choseBackground {
+    width: 100px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+#tapet-vit {
+    background-image: url(images/tapet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tapet-gul {
+    background-image: url(images/tapetGul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tapet-rosa {
+    background-image: url(images/tapetRosa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 4. Formulär */
+button {
+    background-color: #A9BC84;
+    border: none;
+    border-radius: 4px;
+    color: #eee;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #666;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* 5. Kortspel */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 10px;
+}
+
+/* 6. Footer */
+footer {
+    background-color: #FAF8EB;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+.credits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.credits p {
+    font-size: 12px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px dotted green;
+    padding: 5px;
+}
